@@ -4,7 +4,8 @@ $(document).ready(function() {
         if (taskText !== '') {
             // Verifica se a tarefa já existe na lista
             const taskExists = $('#taskList li').toArray().some(function(item) {
-                return $(item).text().trim() === taskText;
+                var item = $(item).text().substring(0, $(item).text().indexOf(' '));
+                return item === taskText;
             });
 
             if (!taskExists) {

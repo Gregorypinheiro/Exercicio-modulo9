@@ -24,8 +24,8 @@ h1 {
 }
 input[type="text"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-right: 16px;
 }
 
 button {
@@ -53,13 +53,13 @@ li {
     color: #888;
 }
 
-#taskList {
-    
-}
-
 .deleteTask {
     background: red
 }
 
+.input-tarefa {
+    display: flex;
+    margin-bottom: 16px;
+    }
 
 
